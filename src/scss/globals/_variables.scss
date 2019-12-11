@@ -1,6 +1,8 @@
 @import './mixins';
 @import './functions';
-@import '../../../node_modules/bootstrap/scss/bootstrap-reboot';
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
 
 $primaryColor: #359bd4;
 $primaryColorDarker: #256f98;
