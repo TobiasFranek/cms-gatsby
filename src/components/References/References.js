@@ -15,7 +15,7 @@ export default () => {
 						<Img 
 							className="grid__picture__image"
 							alt={reference.name}
-							imgStyle={{objectPosition: 'top'}} 
+							imgStyle={{objectPosition: 'middle'}} 
 							sizes={reference.image.childImageSharp.sizes} />
 					</div>
 					<div className={`grid__picture__description grid__picture__description--${index+1}`}>
