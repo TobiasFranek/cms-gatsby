@@ -10,8 +10,11 @@ import ServiceList from '../components/ServiceList/ServiceList';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+	<h3 className="h3">Leistungen</h3>
     <ServiceList/>
+	<h3 className="h3">News</h3>
     <News />
+	<h3 className="h3">Referenzen</h3>
     <References />
   </Layout>
 )
