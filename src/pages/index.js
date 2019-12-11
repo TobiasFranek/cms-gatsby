@@ -11,7 +11,6 @@ import Hero from '../components/Hero/Hero';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <ServiceList/>
 	<h3 className="h3">Leistungen</h3>
     <ServiceList/>
 	<h3 className="h3">News</h3>

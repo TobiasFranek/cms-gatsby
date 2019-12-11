@@ -12,7 +12,7 @@ export default function useReferences() {
 					image {
 						childImageSharp {
 							sizes(maxWidth: 600, quality: 90) {
-								...GatsbyImageSharpSizes
+								...GatsbyImageSharpSizes_tracedSVG
 							}
 						}
 					}
