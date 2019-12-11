@@ -1,0 +1,16 @@
+@import '../../scss/globals/variables';
+
+.header {
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    &__headline {
+        margin: 0 0 0 em(10);
+        @include media-breakpoint-down(sm) {
+            font-size: em(35)
+        }
+    }
+}
