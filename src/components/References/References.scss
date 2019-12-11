@@ -1,0 +1,185 @@
+@import '../../scss/globals/variables';
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    margin-bottom: em(30);
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(6, 150px);
+    }
+  
+    &__area {
+      grid-row-start: 1;
+      grid-row-end: 4;
+      &--1 {
+        background-color: $secondColor;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+      &--2{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        background-color: $thirdColor;
+      }
+      &--3{
+        grid-column-start: 5;
+        grid-column-end: 9;
+        background: $fourthColor;
+        @include media-breakpoint-down(sm) {
+          grid-column-start: 1;
+          grid-column-end: 5;
+          grid-row-start: 4;
+          grid-row-end: 7;
+        }
+  
+      }
+    }
+    &__picture {
+      margin: 5px 5px 0 5px;
+      &--1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        // background: url("./../img/dina-meyer.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include media-breakpoint-down(sm) {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+      }
+      &--2{
+        // background: url("./../img/thomas-meyer.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        z-index: 2;
+        @include media-breakpoint-down(sm) {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+      }
+        &--3{
+        //   background: url("./../img/vorstand.jpg");
+          background-position: top;
+          background-size: cover;
+          background-repeat: no-repeat;
+          grid-column-start: 6;
+          grid-column-end: 9;
+          grid-row-start: 1;
+          grid-row-end: 3;
+          margin: 5px 5px 0 5px;
+          @include media-breakpoint-down(sm) {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 6;
+          }
+        }
+     
+  
+      &__description{
+        padding: 10px;
+        &--1{
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 3;
+          z-index:3;
+          background-color: $secondColor;
+        }
+        &--2{
+          grid-column-start: 2;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 2;
+          justify-self: end;
+        }
+        &--3{
+          grid-column-start: 6;
+          grid-column-end: 9;
+          grid-row-start: 3;
+          grid-row-end: 4;
+          justify-self: end;
+          @include media-breakpoint-down(sm) {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 6;
+            grid-row-end: 7;
+          }
+        }
+      }
+      &__blockquote{
+        &--1{
+        margin: 0;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        padding: 10px;
+        background-color: $secondColor;
+        z-index: 3;
+        }
+        &--2{
+          grid-column-start: 3;
+          grid-column-end: 5;
+          grid-row-start: 2;
+          grid-row-end: 3;
+          padding: 10px;
+  
+        }
+        &--3{
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        justify-self: start;
+        align-self: end;
+        padding: 10px;
+        @include media-breakpoint-down(sm) {
+          grid-column-start: 1;
+          grid-column-end: 5;
+          grid-row-start: 6;
+          grid-row-end: 7;
+          }
+        }
+      }
+    }
+  
+    .special-quotes {
+      font-family: 'IM Fell French Canon', serif;
+      grid-column-start: 5;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      background: $primaryColor;
+      margin: 0;
+      color: #fff;
+      font-size: 250px;
+      overflow: hidden;
+      text-align: center;
+      line-height: 1;
+      padding: 0 20px;
+      @include media-breakpoint-down(sm) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 6;
+      }
+      @media only screen and (max-width: 950px) {
+        font-size: 180px;
+    }
+    }
+  }
