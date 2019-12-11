@@ -1,6 +1,6 @@
 import React from 'react';
 import './News.scss';
-import { useNews } from '../query/static';
+import { useNews } from '../../query/static';
 
 export default () => {
 	const news = useNews();

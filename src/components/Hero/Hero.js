@@ -1,11 +1,10 @@
 import React from 'react';
 import './Hero.scss'
-import { useHero } from '../query/static';
+import { useHero } from '../../query/static';
 import Img from 'gatsby-image';
 
 export default () => {
 	const { title, button_link, button, backgroundimage } = useHero();
-	console.log(backgroundimage);
 	return (
 		<div className="hero">
 			<Img 

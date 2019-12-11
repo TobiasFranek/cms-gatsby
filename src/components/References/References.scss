@@ -37,7 +37,11 @@
       }
     }
     &__picture {
-      margin: 5px 5px 0 5px;
+	  margin: 5px 5px 0 5px;
+	  overflow: hidden;
+	  &__image {
+		  height: 100%;
+	  }
       &--1 {
         grid-column-start: 1;
         grid-column-end: 2;
