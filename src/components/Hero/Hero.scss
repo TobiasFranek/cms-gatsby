@@ -1,0 +1,53 @@
+@import './../../scss/globals/variables';
+
+.hero {
+    flex-basis: 100%;
+    height: em(500);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+        height: em(300);
+    }
+    @include media-breakpoint-down(xs) {
+        height: em(350);
+
+    }
+    &__wrapper {
+        width: 50%;
+        position: absolute;
+        right: 15px;
+        top: 100px;
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+            text-align: center;
+            padding: 0 em(20);
+        }
+        @media only screen and (max-width: 950px) {
+            top:50px;
+        }
+    }
+
+
+    &__btn {
+        margin-left: -10px;
+    }
+
+    &__headline {
+        background: #fff;
+        display: inline;
+        padding: 2px 0;
+        box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+        line-height: 1.4;
+        font-weight: 300;
+        font-size: em(60);
+        color: $primaryColor;
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+        @include media-breakpoint-down(sm) {
+          font-size: em(40);
+        }
+
+    }
+}
