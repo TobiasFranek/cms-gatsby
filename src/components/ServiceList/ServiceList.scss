@@ -1,0 +1,10 @@
+@import '../../scss/globals/variables';
+
+
+.cards__list {
+        @include list-unstyled();
+        display: flex;
+        @include media-breakpoint-down(sm) {
+            display: block;
+        }
+    }

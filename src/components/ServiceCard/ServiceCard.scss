@@ -1,0 +1,49 @@
+@import '../../scss/globals/variables';
+
+.cards__list__card {
+        flex-grow: 1;
+        margin-right: em(15);
+        text-align: center;
+        border-radius: 5px;
+        padding: em(25) em(50);
+        transition: all 0.4s ease;
+        cursor: pointer;
+        @include media-breakpoint-down(sm) {
+            margin: 0 auto em(25) auto;
+            max-width: em(300);
+        }
+        &:last-child {
+            margin: 0;
+            @include media-breakpoint-down(sm) {
+                margin: 0 auto;
+            }
+        }
+        &--green {
+            background: $secondColor;
+            &:hover {
+                background: darken($secondColor, 10%);
+            }
+        }
+        &--blue {
+            background: $thirdColor;
+            &:hover {
+                background: darken($thirdColor, 10%);
+            }
+        }
+        &--yellow {
+            background: $fourthColor;
+            &:hover {
+                background: darken($fourthColor, 10%);
+            }
+        }
+        &__link {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &__headline {
+            font-size: em(20);
+            color: $primaryColor;
+        }
+    }
+
