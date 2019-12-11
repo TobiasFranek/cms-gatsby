@@ -1,5 +1,7 @@
 import useHero from './header';
+import useNews from './news';
 
 export {
-	useHero
+	useHero,
+	useNews
 }
