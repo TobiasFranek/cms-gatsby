@@ -1,18 +1,30 @@
 @import './../../scss/globals/variables';
 
+$height: em(500);
+$height-sm: em(300);
+$height-xs: em(350);
+
 .hero {
     flex-basis: 100%;
-    height: em(500);
-    background-size: cover;
-    background-position: center;
+    height: $height;
     position: relative;
     @include media-breakpoint-down(sm) {
-        height: em(300);
+        height: $height-sm;
     }
     @include media-breakpoint-down(xs) {
-        height: em(350);
+        height: $height-xs;
 
-    }
+	}
+	&__image {
+		height: $height;
+		@include media-breakpoint-down(sm) {
+			height: $height-sm;
+		}
+		@include media-breakpoint-down(xs) {
+			height: $height-xs;
+	
+		}
+	}
     &__wrapper {
         width: 50%;
         position: absolute;

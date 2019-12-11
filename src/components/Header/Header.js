@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from '../Navigation/Navigation';
 import './Header.scss';
+import Hero from '../Hero/Hero';
 
 export default () => (
 	<header className="header">
@@ -8,6 +9,6 @@ export default () => (
 			<a className="a header__headline__a" href="/">Alex Mayer</a>
 		</h1>
 		<Navigation />
-		{/* TODO add Hero */}
+		<Hero />
 	</header>
 )

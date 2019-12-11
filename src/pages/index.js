@@ -11,8 +11,7 @@ import Hero from '../components/Hero/Hero';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-      <Hero headline="Glänzenden Ideen für leuchtende Augen" buttonColor="green" buttonText="Angebot einholen" />
-      <ServiceList/>
+    <ServiceList/>
 	<h3 className="h3">Leistungen</h3>
     <ServiceList/>
 	<h3 className="h3">News</h3>
