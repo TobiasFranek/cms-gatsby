@@ -1,0 +1,27 @@
+@import './mixins';
+@import './functions';
+@import '../../../node_modules/bootstrap/scss/bootstrap-reboot';
+
+$primaryColor: #359bd4;
+$primaryColorDarker: #256f98;
+
+// present at:
+// first element Serviceicons, Grid
+$secondColor: #fffbce;
+
+// present at:
+// second element Serviceicons, Grid
+$thirdColor: #bee3ee;
+
+// present at:
+// third element Serviceicons, Grid
+$fourthColor: #d0e4c6;
+
+// present at:
+// Newslist -> Background
+$fiveColor: #f3d1bf;
+
+$green: #459b45;
+
+$defaultFontColor: #333;
+$primaryFont: "Slabo 13px", serif;
