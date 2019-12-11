@@ -1,0 +1,8 @@
+@import '../../scss/globals/variables';
+
+.news-list {
+    @include list-unstyled();
+    background: $fiveColor;
+    padding: em(10) em(8);
+    border-radius: 5px;
+}
